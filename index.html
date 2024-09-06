@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clue Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Welcome to the Clue Game</h1>
+        <div id="password-entry">
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" placeholder="Enter 1111">
+            <button onclick="checkPassword()">Submit</button>
+        </div>
+        <div id="countdown-timer" style="display: none;">
+            <p>Game starts in <span id="timer">1:00</span></p>
+        </div>
+        <div id="clue-container" style="display: none;">
+            <h2>Your Daily Clue</h2>
+            <p id="clue"></p>
+            <div id="charm-container">
+                <h3>Today's Digital Charm</h3>
+                <p id="charm"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
